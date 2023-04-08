@@ -16,7 +16,7 @@ class FinalWin(QWidget):
         self.layout_line2=QVBoxLayout()  
         self.layout_line2.addWidget(self.helllo_text, alignment = Qt.AlignCenter)  
         self.layout_line2.addWidget(self.indi, alignment = Qt.AlignCenter)
-        self.setLayout(self.layout_line)
+        self.setLayout(self.layout_line2)
 
     def set_appear(self):
         self.setWindowTitle(txt_finalwin)
