@@ -23,11 +23,11 @@ class MainWin(QWidget):
         self.setLayout(self.layout_line)
 
     def next_click(self):
-        self.tw=TestWin()
+        self.tw = TestWin()
         self.hide()
 
     def connects(self):
-        aelf.btn_next.clicked.connect(self.next_click)
+        self.btn_next.clicked.connect(self.next_click)
 
     def set_appear(self):
         self.setWindowTitle(txt_title)
@@ -36,4 +36,4 @@ class MainWin(QWidget):
 
 app = QApplication([])
 mw= MainWin()
-app.exec_()  
+app.exec_()   
